@@ -42,7 +42,7 @@ public class Factura {
         if (descuento>0){ //valido que el dto no sea cero
             montoTotal= montoTotal - (montoTotal* descuento); //ej: total= 50 - (50-5)
         }
-        return montoTotal;
+        return Math.floor(montoTotal);
     }
 
  // esto está acá xq le pido los items a la factura!!!!
@@ -52,3 +52,5 @@ public class Factura {
 
     }
 }
+
+
